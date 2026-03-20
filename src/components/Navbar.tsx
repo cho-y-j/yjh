@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { motion } from "framer-motion";
-import { Home, Users, Heart } from "lucide-react";
+import { Home, Users, Heart, MessageSquare } from "lucide-react";
 import clsx from "clsx";
 
 export default function Navbar() {
@@ -12,6 +12,7 @@ export default function Navbar() {
   const links = [
     { name: "홈", href: "/", icon: Home },
     { name: "가족 소개", href: "/family", icon: Users },
+    { name: "게시판", href: "/board", icon: MessageSquare },
   ];
 
   return (
