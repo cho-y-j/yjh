@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { User, Heart, Star, Zap, Shield, Sparkles } from "lucide-react";
+import { Heart, Star, Zap, Shield, Sparkles } from "lucide-react";
 
 export default function FamilyPage() {
   const familyMembers = [
@@ -60,7 +60,7 @@ export default function FamilyPage() {
         </motion.div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-10">
-          {familyMembers.map((member, idx) => {
+          {familyMembers.map((member) => {
             const Icon = member.icon;
             return (
               <motion.div
